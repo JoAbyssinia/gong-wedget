@@ -203,6 +203,30 @@ body {
   font-size: 1rem;
 }
 
+/* ── Developer footer ── */
+.dev-footer {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(203, 213, 225, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dev-sep {
+  opacity: 0.4;
+}
+
+.dev-link {
+  color: rgba(203, 213, 225, 0.65);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.dev-link:hover {
+  color: var(--gong-highlight);
+}
+
 /* ── Keyframes ── */
 @keyframes gongFloat {
   0%, 100% { transform: translateY(0);    }
