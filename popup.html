@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint Gong</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1 class="title">Sprint Gong</h1>
+
+      <!-- Stage holds the gong plus a visual stick used in the hit animation. -->
+      <div id="gongStage" class="gong-stage">
+        <button id="gongButton" class="gong" aria-label="Strike the sprint gong">
+          <span class="gong-center"></span>
+        </button>
+        <span class="gong-stick" aria-hidden="true"></span>
+      </div>
+
+      <!-- Message becomes visible after the gong is struck. -->
+      <p id="kickoffMessage" class="kickoff-message" aria-live="polite">
+        Sprint Kickoff!
+      </p>
+
+      <!-- 5 dots that fill up counting toward disco mode -->
+      <div class="strike-meter" aria-label="Strike progress" title="Strike 5 times for disco mode!">
+        <span class="meter-dot" data-index="0"></span>
+        <span class="meter-dot" data-index="1"></span>
+        <span class="meter-dot" data-index="2"></span>
+        <span class="meter-dot" data-index="3"></span>
+        <span class="meter-dot" data-index="4"></span>
+      </div>
+
+      <p class="hint">Click the gong to start the sprint 🎉</p>
+    </main>
+
+    <!--
+      Disco overlay — shown after 5 consecutive strikes.
+      pointer-events: none so the gong stays clickable underneath.
+    -->
+    <div id="discoOverlay" class="disco-overlay" aria-hidden="true">
+      <div class="disco-wrap">
+        <div class="disco-string"></div>
+        <div class="disco-ball-wrap">
+          <div class="disco-ball"></div>
+          <!-- 8 light beams that rotate around the ball -->
+          <div class="beam-ring">
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+            <span class="beam"></span>
+          </div>
+        </div>
+      </div>
+      <p class="happy-sprinting">🎊 Happy Sprinting! 🎊</p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
