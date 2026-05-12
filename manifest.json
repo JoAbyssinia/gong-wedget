@@ -4,7 +4,7 @@
   "short_name": "SprintGong",
   "version": "1.0.0",
   "version_name": "1.0.0",
-  "description": "Kick off your two-week sprint with a celebratory gong strike, emoji rain, and disco mode. Built for agile teams who love a good ritual.",
+  "description": "Kick off your sprint with a gong strike, emoji rain, and disco mode. Built for agile teams who love a good ritual.",
   "author": "JoAbyssinia",
   "homepage_url": "https://github.com/JoAbyssinia/gong-wedget",
   "minimum_chrome_version": "102",
