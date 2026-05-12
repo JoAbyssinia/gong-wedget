@@ -2,7 +2,7 @@
 
 A Chrome extension for agile teams. Click the gong to kick off your sprint with sound, emoji rain, and celebrations.
 
-![Sprint Gong Poster](./icons/icon128.png)
+![Sprint Gong Logo](./icons/icon128.png)
 
 ## Features
 
